@@ -3,6 +3,7 @@
 
 <div class="gallery-boards">
 
+<% if @galleries.present? %>
   <% @galleries.each do |gallery| %>
     <div class="gallery-board">
 
@@ -20,9 +21,13 @@
         <% end %>
       </div>
 
-
     </div>
   <% end %>
+
+<% else %>
+  <p> &lt;&lt;No Galleries Yes&gt;&gt; </p>
+
+<% end %>
 
 </div>
 
