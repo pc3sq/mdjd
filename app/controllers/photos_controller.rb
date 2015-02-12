@@ -14,11 +14,13 @@ class PhotosController < ApplicationController
 
   # GET /photos/new
   def new
+    @gallery_options = Gallery.all.map{|gallery| [gallery.title, gallery.id]}
     @photo = Photo.new
   end
 
   # GET /photos/1/edit
   def edit
+    @gallery_options = Gallery.all.map{|gallery| [gallery.title, gallery.id]}
   end
 
   # POST /photos
