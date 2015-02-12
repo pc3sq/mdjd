@@ -5,5 +5,12 @@
   <%= @gallery.title %>
 </p>
 
+<% @gallery.photos.each do |photo| %>
+	<div class="photo">
+		<%= link_to image_tag(photo.image_url(:thumb).to_s), photo_path(photo.id) %>
+		<p><%= photo.title %></p>
+	</div>
+<% end %>
+
 <%= link_to 'Edit', edit_gallery_path(@gallery) %> |
 <%= link_to 'Back', galleries_path %>
