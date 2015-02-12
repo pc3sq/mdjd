@@ -1,7 +1,9 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+gallery_names = [ "Shizzles & Giggles", "Pipsqueaks", "Badboys", "Sipping on Gin & Juice", "Smasking Pumpkins" ]
+
+
+gallery_names.each do |name|
+	gallery = Gallery.create(title: name)
+	gallery.photos << Photo.create(title: "Big Boi", image: File.open(File.join(Rails.root, '/public/pics/bulldogball.jpg')))
+	gallery.photos << Photo.create(title: "Meat Log", image: File.open(File.join(Rails.root, '/public/pics/bulldog-home.png')))
+	gallery.photos << Photo.create(title: "Ada Lovelace", image: File.open(File.join(Rails.root, '/public/pics/Ada_Lovelace_portrait.jpg')))
+end
