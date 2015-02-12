@@ -1,3 +1,26 @@
 // Place all the styles related to the Galleries controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+	font-family: "proxima-nova";
+}
+
+.navbar {
+		text-align: center;
+}
+
+h1 {
+	text-align: center;
+}
+
+
+.gallery-board {
+	float: left;
+	margin: 10px 30px 10px 30px;
+}
+
+.gallery-title {
+	color: green;
+	text-align: center;
+}
