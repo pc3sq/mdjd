@@ -1,6 +1,8 @@
 <h1>Editing gallery</h1>
+<br>
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @gallery %> |
-<%= link_to 'Back', galleries_path %>
+<%= link_to 'Delete Gallery', @gallery, method: :delete, data: { confirm: 'Delete this gallery?' } %> |
+<%= link_to 'View Gallery', @gallery %> |
+<%= link_to 'Back to Portfolio', galleries_path %>

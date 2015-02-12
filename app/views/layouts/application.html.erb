@@ -7,11 +7,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<nav class="navbar">
-			<%= link_to "Home", root_path %>
 		<div class="container-fluid">
+			<nav class="navbar">
+					<span id="mdjd-logo">MDJD</span>
+					<span id="nav-links">
+						<%= link_to "portfolio", root_path %>
+						<%= link_to "about" %>
+						<%= link_to "contact" %>
+					</span>
+
+					<span id="nav-admin"> 
+						<%= link_to 'New Gallery', new_gallery_path %>
+					</span>
+			</nav>
 			<%= yield %>
 		</div>
-	</nav>
 </body>
 </html>

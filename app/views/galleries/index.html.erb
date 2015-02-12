@@ -1,6 +1,3 @@
-<h1>Galleries</h1>
-<%= link_to 'New Gallery', new_gallery_path %>
-
 <div class="gallery-boards">
 
 <% if @galleries.present? %>
@@ -25,7 +22,7 @@
   <% end %>
 
 <% else %>
-  <p> &lt;&lt;No Galleries Yes&gt;&gt; </p>
+  <center><p> &lt;&lt;No Galleries Yet&gt;&gt; </p></center>
 
 <% end %>
 

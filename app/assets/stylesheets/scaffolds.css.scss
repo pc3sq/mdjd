@@ -1,13 +1,42 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat-Bold'), url(http://fonts.gstatic.com/s/montserrat/v6/IQHow_FEYlDC4Gzy_m8fcmaVI6zN22yiurzcBKxPjFE.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
 body {
   background-color: #fff;
   color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: "proxima-nova", "Montserrat", "Helvetica", "Serif";
   font-size: 13px;
   line-height: 18px;
 }
 
+.navbar span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navbar a {
+  margin-left: 5px;
+  color: #C2C2C2;
+}
+
+#mdjd-logo {
+  font-weight: bold;
+  font-size: 50px;
+  margin-right: 10px;
+}
+
+#nav-admin {
+  padding-top: 11px;
+  float: right;
+}
+
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: "proxima-nova", "Montserrat", "Helvetica", "Serif";
   font-size: 13px;
   line-height: 18px;
 }
@@ -20,13 +49,6 @@ pre {
 
 a {
   color: #000;
-  &:visited {
-    color: #666;
-  }
-  &:hover {
-    color: #fff;
-    background-color: #000;
-  }
 }
 
 div {

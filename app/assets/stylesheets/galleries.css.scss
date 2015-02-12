@@ -6,21 +6,22 @@ body {
 	font-family: "proxima-nova";
 }
 
-.navbar {
-		text-align: center;
-}
-
 h1 {
 	text-align: center;
 }
 
+.gallery-boards {
+	background-color: #fbf9f9;
+	margin: 0px auto;
+	padding: 3px;
+}
 
 .gallery-board {
-	float: left;
+	float: center;
 	margin: 10px 30px 10px 30px;
+	text-align: center;
 }
 
 .gallery-title {
-	color: green;
-	text-align: center;
+	font-size: 15px;
 }
