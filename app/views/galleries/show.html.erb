@@ -1,9 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @gallery.title %>
-</p>
+<center><nav class="gallery-nav">
+	<strong><%= @gallery.title %></strong>
+	<br>
+	<span class="gallery-nav-links">
+		<%= link_to 'Add Photos', new_photo_path %> |
+		<%= link_to 'Edit Title', edit_gallery_path(@gallery) %> |
+		<%= link_to 'Delete Gallery', @gallery, method: :delete, data: { confirm: 'Are you sure?' } %>
+	</span>
+</nav></center>
+
 
 <% @gallery.photos.each do |photo| %>
 	<div class="photo">
@@ -12,5 +18,7 @@
 	</div>
 <% end %>
 
-<%= link_to 'Edit', edit_gallery_path(@gallery) %> |
-<%= link_to 'Back', galleries_path %>
+<br class="clear">
+<center><footer>
+	<%= link_to 'Back to Portfolio', galleries_path %>
+</footer></center>

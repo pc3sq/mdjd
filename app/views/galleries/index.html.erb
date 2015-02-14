@@ -1,30 +1,37 @@
-<div class="gallery-boards">
+<div id="galleries">
 
-<% if @galleries.present? %>
-  <% @galleries.each do |gallery| %>
-    <div class="gallery-board">
+  <div id="galleries-container">
+  
+  <h2>Portfolio</h2>
 
-<!--         <td><%= link_to 'Show', gallery %></td>
-      <td><%= link_to 'Edit', edit_gallery_path(gallery) %></td>
-      <td><%= link_to 'Destroy', gallery, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+    <% if @galleries.present? %>
+      <% @galleries.each do |gallery| %>
+        <div class="gallery-board">
 
-      <p class="gallery-title"><%= gallery.title %></p>
+    <!--         <td><%= link_to 'Show', gallery %></td>
+          <td><%= link_to 'Edit', edit_gallery_path(gallery) %></td>
+          <td><%= link_to 'Destroy', gallery, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
 
-      <div>
-        <% if gallery.photos.present? %>
-          <%= link_to image_tag(gallery.photos(order: "RANDOM()").first.image_url(:thumb).to_s), gallery_path(gallery.id)  %>
-        <% else %>
-          <p> &lt;&lt;No photos yet&gt;&gt; </p>
-        <% end %>
-      </div>
+          <!-- <p class="gallery-title"><%= gallery.title %></p> -->
 
-    </div>
-  <% end %>
+          <div>
+            <% if gallery.photos.present? %>
+              <%= link_to image_tag(gallery.photos.sample.image_url(:thumb).to_s), gallery_path(gallery.id)  %>
+            <% else %>
+              <p> &lt;&lt;No photos yet&gt;&gt; </p>
+            <% end %>
+          </div>
 
-<% else %>
-  <center><p> &lt;&lt;No Galleries Yet&gt;&gt; </p></center>
+        </div>
+      <% end %>
 
-<% end %>
+    <% else %>
+
+      <center><p> &lt;&lt;No Galleries Yet&gt;&gt; </p></center>
+
+    <% end %>
+
+  </div>
 
 </div>
 

@@ -19,16 +19,18 @@ body {
   vertical-align: middle;
 }
 
-.navbar a {
-  margin-left: 5px;
-  color: #C2C2C2;
-}
-
 #mdjd-logo {
+  color: black;
   font-weight: bold;
   font-size: 50px;
   margin-right: 10px;
 }
+
+.navbar a {
+  margin-left: 5px;
+  color: green;
+}
+
 
 #nav-admin {
   padding-top: 11px;
