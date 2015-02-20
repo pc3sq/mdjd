@@ -33,9 +33,6 @@ gem 'rails_12factor', group: :production
 gem 'rmagick'
 gem 'carrierwave'
 
-# For bootstrap styling
-gem 'bootstrap-sass', '~> 3.2.0'
-gem 'autoprefixer-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
