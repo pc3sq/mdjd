@@ -14,6 +14,8 @@ class PhotosController < ApplicationController
 
   # GET /photos/new
   def new
+    @gallery = Gallery.find(params[:gallery_id]);
+
     @gallery_options = Gallery.all.map{|gallery| [gallery.title, gallery.id]}
     @photo = Photo.new
   end
@@ -26,11 +28,11 @@ class PhotosController < ApplicationController
   # POST /photos
   # POST /photos.json
   def create
-    puts
-    puts "=*" * 80
-    puts photo_params
-    puts "=*" * 80
-    puts
+    # puts
+    # puts "=*" * 80
+    # puts photo_params
+    # puts "=*" * 80
+    # puts
 
     @photo = Photo.new(photo_params)
 
