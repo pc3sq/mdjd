@@ -1,14 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @photo.title %>
-</p>
+<section class="actual-photo">
+  <bold><%= @photo.title %></bold>
+<nav class="photo-footer">
+	<%= link_to "home", root_path %> |
+	<%= link_to "back to #{@photo.gallery.title.upcase}", gallery_path(@photo.gallery.id) %> | 
+	<%= link_to 'Edit Photo', edit_photo_path(@photo) %>
+</nav>
+  <%= image_tag @photo.image_url.to_s, class: "actual-photo" %>
+</section>
 
-<p>
-  <strong>Image:</strong>
-  <%= image_tag @photo.image_url(:thumb).to_s %>
-</p>
 
-<%= link_to 'Edit', edit_photo_path(@photo) %> |
-<%= link_to 'Back', photos_path %>

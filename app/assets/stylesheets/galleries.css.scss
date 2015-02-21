@@ -13,23 +13,12 @@ h1 {
 #galleries {
 	/* background-color: red; */
 	margin: 0px auto;
-	padding: 3px;
+
 }
 
-#galleries-container {
-	min-width: 150px;
-	margin: 0px auto;
+.gallery-cover {
 
-	h2 {
-		font-size: 15px;
-		margin-left: 10px;
-	}
-}
 
-.gallery-board {
-	float: left;
-	margin: 3px 10px 3px 10px;
-	text-align: center;
 }
 
 .gallery-title {
@@ -41,24 +30,26 @@ h1 {
 }
 
 .gallery-nav-links {
-	font-size: .75em;
 	a { 
 		margin: 0px 2px 0px 2px;
 		color: green;	
 	}
 }
 
+.photos {
+	text-align: center;
+	margin: 0px auto;
+}
+
 .photo {
-	float: left;
-	margin: 3px 10px 3px 10px;
+	display: inline;
 	text-align: center;
 }
 
 footer {
-	margin-top: 5px;
-	font-size: .75em;
+	text-align: center;
+	margin: 0px auto;
 	a { 
-		margin-left: 4px;
 		color: green;	
 	}
 }

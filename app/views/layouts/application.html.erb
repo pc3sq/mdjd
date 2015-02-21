@@ -2,25 +2,26 @@
 <html>
 <head>
   <title>MDJD</title>
+  <link href="http://d2v52k3cl9vedd.cloudfront.net/basscss/4.1.2/basscss.min.css" rel="stylesheet">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-		<div class="container-fluid">
-			<nav class="navbar">
-					<%= link_to 'MDJD', root_path, {id: "mdjd-logo"} %>
-					<span id="nav-links">
-						<%= link_to "portfolio", root_path %>
-						<%= link_to "about" %>
-						<%= link_to "contact" %>
-					</span>
+	<div>
+		<nav class="navbar">
+				<%= link_to 'MDJD', root_path, {id: "mdjd-logo"} %>
+				<span id="nav-links">
+					<%= link_to "portfolio", root_path %>
+					<%= link_to "about" %>
+					<%= link_to "contact" %>
+				</span>
 
-					<span id="nav-admin"> 
-						<%= link_to 'New Gallery', new_gallery_path %>
-					</span>
-			</nav>
-			<%= yield %>
-		</div>
+				<p id="nav-admin"> 
+					<%= link_to 'New Gallery', new_gallery_path %>
+				</p>
+		</nav>
+		<%= yield %>
+	</div>
 </body>
 </html>

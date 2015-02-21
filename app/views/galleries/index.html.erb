@@ -1,12 +1,10 @@
-<div id="galleries">
-
-  <div id="galleries-container">
+<center><h2></h2></center>
   
-  <h2>Portfolio</h2>
+<div id="galleries" class="row">
 
     <% if @galleries.present? %>
       <% @galleries.each do |gallery| %>
-        <div class="gallery-board">
+        <div class="gallery-cover col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
 
     <!--         <td><%= link_to 'Show', gallery %></td>
           <td><%= link_to 'Edit', edit_gallery_path(gallery) %></td>
@@ -30,8 +28,6 @@
       <center><p> &lt;&lt;No Galleries Yet&gt;&gt; </p></center>
 
     <% end %>
-
-  </div>
 
 </div>
 

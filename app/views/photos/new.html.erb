@@ -2,4 +2,4 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Back', photos_path %>
+<footer><%= link_to "Back to #{@photo.gallery.title.upcase}", gallery_path(@photo.gallery.id) %></footer>
