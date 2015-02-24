@@ -28,11 +28,8 @@ class PhotosController < ApplicationController
   # POST /photos
   # POST /photos.json
   def create
-    # puts
-    # puts "=*" * 80
-    # puts photo_params
-    # puts "=*" * 80
-    # puts
+
+    @gallery = Gallery.find(params[:gallery_id])
 
     @photo = Photo.new(photo_params)
 

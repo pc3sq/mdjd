@@ -15,12 +15,19 @@
     <%= f.label :title %><br>
     <%= f.text_field :title %>
   </div>
+  <% if @photo.image %>
+    <%= image_tag @photo.image_url.to_s %>
+  <% end %>
   <div class="field">
-    <%= f.label :image %><br>
+    <!-- <%= f.label :image %><br> -->
     <%= f.file_field :image %>
   </div>
   <div class="field">
-    <%= f.select(:gallery_id, @gallery_options) %>
+    <% if @photo.gallery %>
+      <%= f.select(:gallery_id, @gallery_options, selected: @photo.gallery.id) %>
+    <% else %>
+      <%= f.select(:gallery_id, @gallery_options, selected: @gallery.id) %>
+    <% end %>
   </div>
   <div class="actions">
     <%= f.submit %>

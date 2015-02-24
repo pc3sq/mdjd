@@ -4,7 +4,7 @@
 	<strong><%= @gallery.title %></strong>
 	<br>
 	<span class="gallery-nav-links">
-		<%= link_to 'Add Photos', new_photo_path %> |
+		<%= link_to 'Add Photos', new_photo_path(gallery_id: @gallery.id) %> |
 		<%= link_to 'Edit Title', edit_gallery_path(@gallery) %> |
 		<%= link_to 'Delete Gallery', @gallery, method: :delete, data: { confirm: 'Are you sure?' } %>
 	</span>
