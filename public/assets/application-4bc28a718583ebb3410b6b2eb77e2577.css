@@ -1,0 +1,182 @@
+/* line 5, /Users/pc3sq/documents/code/mdjd/app/assets/stylesheets/galleries.css.scss */
+.clear {
+  clear: both;
+}
+
+/* line 9, /Users/pc3sq/documents/code/mdjd/app/assets/stylesheets/galleries.css.scss */
+h1 {
+  text-align: center;
+}
+
+/* line 13, /Users/pc3sq/documents/code/mdjd/app/assets/stylesheets/galleries.css.scss */
+#galleries {
+  /* background-color: red; */
+  margin: 0px auto;
+}
+
+/* line 24, /Users/pc3sq/documents/code/mdjd/app/assets/stylesheets/galleries.css.scss */
+.gallery-title {
+  font-size: 15px;
+}
+
+/* line 28, /Users/pc3sq/documents/code/mdjd/app/assets/stylesheets/galleries.css.scss */
+.gallery-nav {
+  margin-bottom: 10px;
+}
+
+/* line 33, /Users/pc3sq/documents/code/mdjd/app/assets/stylesheets/galleries.css.scss */
+.gallery-nav-links a {
+  margin: 0px 2px 0px 2px;
+  color: green;
+}
+
+/* line 39, /Users/pc3sq/documents/code/mdjd/app/assets/stylesheets/galleries.css.scss */
+.photos {
+  text-align: center;
+  margin: 0px auto;
+}
+
+/* line 44, /Users/pc3sq/documents/code/mdjd/app/assets/stylesheets/galleries.css.scss */
+.photo {
+  display: inline;
+  text-align: center;
+}
+
+/* line 49, /Users/pc3sq/documents/code/mdjd/app/assets/stylesheets/galleries.css.scss */
+footer {
+  text-align: center;
+  margin: 0px auto;
+}
+/* line 52, /Users/pc3sq/documents/code/mdjd/app/assets/stylesheets/galleries.css.scss */
+footer a {
+  color: green;
+}
+/* line 5, /Users/pc3sq/documents/code/mdjd/app/assets/stylesheets/photos.css.scss */
+.actual-photo {
+  text-align: center;
+}
+/* line 8, /Users/pc3sq/documents/code/mdjd/app/assets/stylesheets/photos.css.scss */
+.actual-photo img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+/* line 14, /Users/pc3sq/documents/code/mdjd/app/assets/stylesheets/photos.css.scss */
+.photo-footer {
+  text-align: center;
+  color: green;
+  font-size: 12px;
+}
+
+/* line 20, /Users/pc3sq/documents/code/mdjd/app/assets/stylesheets/photos.css.scss */
+form {
+  margin: 0px auto;
+  max-width: 300px;
+}
+/* line 1, /Users/pc3sq/documents/code/mdjd/app/assets/stylesheets/scaffolds.css.scss */
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+/* line 6, /Users/pc3sq/documents/code/mdjd/app/assets/stylesheets/scaffolds.css.scss */
+.navbar span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 11, /Users/pc3sq/documents/code/mdjd/app/assets/stylesheets/scaffolds.css.scss */
+#mdjd-logo {
+  color: black;
+  font-weight: bold;
+  font-size: 50px;
+  margin-right: 10px;
+}
+
+/* line 18, /Users/pc3sq/documents/code/mdjd/app/assets/stylesheets/scaffolds.css.scss */
+.navbar a {
+  margin-left: 5px;
+  color: green;
+}
+
+/* line 28, /Users/pc3sq/documents/code/mdjd/app/assets/stylesheets/scaffolds.css.scss */
+p, ol, ul, td {
+  font-family: "proxima-nova", "Montserrat", "Helvetica", "Serif";
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 34, /Users/pc3sq/documents/code/mdjd/app/assets/stylesheets/scaffolds.css.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 40, /Users/pc3sq/documents/code/mdjd/app/assets/stylesheets/scaffolds.css.scss */
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* line 45, /Users/pc3sq/documents/code/mdjd/app/assets/stylesheets/scaffolds.css.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 50, /Users/pc3sq/documents/code/mdjd/app/assets/stylesheets/scaffolds.css.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 55, /Users/pc3sq/documents/code/mdjd/app/assets/stylesheets/scaffolds.css.scss */
+#notice {
+  color: green;
+}
+
+/* line 59, /Users/pc3sq/documents/code/mdjd/app/assets/stylesheets/scaffolds.css.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 65, /Users/pc3sq/documents/code/mdjd/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 72, /Users/pc3sq/documents/code/mdjd/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 82, /Users/pc3sq/documents/code/mdjd/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/* This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *
+ *
+ */
